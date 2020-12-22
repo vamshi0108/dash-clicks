@@ -1,4 +1,4 @@
-# EduCrack
+# DashClicks
 
 DashClicks assignment
 
