@@ -2,6 +2,13 @@ const express = require("express");
 const Task = require("../models/task");
 const router = new express.Router();
 
+//To create task of a aprticular user
+
+// {
+//   "description": "playing to live",
+//   "taskname": "play",
+//   "username": "vamshi"
+// }
 router.post("/tasks", async (req, res) => {
   const task = new Task({
     ...req.body,
@@ -75,6 +82,7 @@ router.patch("/tasks/:username/:taskname", async (req, res) => {
   }
 });
 
+//Deleting the user
 router.delete("/tasks/:id", async (req, res) => {
   try {
     const task = await Task.findOneAndDelete({

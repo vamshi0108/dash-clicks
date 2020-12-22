@@ -3,6 +3,12 @@ const User = require("../models/user");
 const router = new express.Router();
 
 //Create the User
+
+// {
+//   "email": "vamshi@gmail.com",
+//   "username": "vamshi"
+// }
+
 router.post("/users", async (req, res) => {
   console.log(req.body);
   const user = new User(req.body);
@@ -20,9 +26,10 @@ router.get("/users/me", async (req, res) => {
   res.send(req.user);
 });
 
-//Update the user
+//Update the user info
 router.patch("/users/me", async (req, res) => {
   const updates = Object.keys(req.body);
+  //We can also restrict user to update only some columns by below logic
   const allowedUpdates = ["email"];
   const isValidOperation = updates.every((update) =>
     allowedUpdates.includes(update)

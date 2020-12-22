@@ -34,12 +34,14 @@ const userSchema = new mongoose.Schema(
   }
 );
 
+//Creating primary key and foreign key mapping to task table
 userSchema.virtual("tasks", {
   ref: "Task",
   localField: "_id",
   foreignField: "owner",
 });
 
+//Method can be called anywhere to conver it to json
 userSchema.methods.toJSON = function () {
   const user = this;
   const userObject = user.toObject();

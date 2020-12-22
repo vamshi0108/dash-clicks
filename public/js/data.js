@@ -15,14 +15,15 @@ $userForm.addEventListener("submit", (e) => {
   e.preventDefault();
 });
 
-$taskForm!=null && $taskForm.addEventListener("submit", (e) => {
-  if ("block" == $mytask.style.display) {
-    $mytask.style.display = "none";
-  } else {
-    $mytask.style.display = "block";
-  }
-  e.preventDefault();
-});
+$taskForm != null &&
+  $taskForm.addEventListener("submit", (e) => {
+    if ("block" == $mytask.style.display) {
+      $mytask.style.display = "none";
+    } else {
+      $mytask.style.display = "block";
+    }
+    e.preventDefault();
+  });
 
 $myForm.addEventListener("submit", (e) => {
   //DB hit to Save data
@@ -35,6 +36,6 @@ $myForm.addEventListener("submit", (e) => {
   });
   let template = `<div class="user-task"><div class="user-header"><h4 class="user-title">${$username.value}</h4><ul id="task-list"></ul><form id="task-form"><button class="submitTask">ADD USER</button></form></div></div>`;
   e.preventDefault();
+  //Adding new user at the end
   $userData.insertAdjacentHTML("beforeend", template);
-  // $myForm.style.display = "none";
 });

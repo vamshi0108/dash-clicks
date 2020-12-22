@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 
 const taskSchema = new mongoose.Schema(
   {
+    //This is foreign key - mapped with USER table
     owner: {
       type: mongoose.Schema.Types.ObjectId,
       required: true,

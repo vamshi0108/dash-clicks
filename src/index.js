@@ -5,6 +5,8 @@ const userRouter = require("./routers/user");
 const taskRouter = require("./routers/task");
 
 const app = express();
+
+//For production and testing
 const port = process.env.port || 8080;
 
 const publicDirectory = path.join(__dirname, "../public");
