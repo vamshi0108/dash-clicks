@@ -56,6 +56,12 @@ Now API endpoints can be hit by using postman or chrome
 ## Sample Images
 
 ![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image1.png?raw=true)
+![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image2.png?raw=true)
+![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image3.png?raw=true)
+![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image4.png?raw=true)
+![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image5.png?raw=true)
+![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image6.png?raw=true)
+![alt text](https://github.com/vamshi0108/dash-clicks/blob/master/public/img/image7.png?raw=true)
 
 ## Authors
 
